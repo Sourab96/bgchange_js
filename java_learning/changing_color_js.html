@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <style>
+        #screen{
+            width:206px;
+            height:300px;
+            border: solid 1px;
+            margin-left: 10%;
+            margin-top: 20%;
+        }
+        #cl{
+            margin-left: 10%;
+            margin-top: 10px;
+            
+        }
+
+    </style>
+    <body>
+        <div id="screen">
+
+        </div>
+
+        <div id="cl">
+            
+            <button onclick="color('red')">Red</button>
+            <button onclick="color('green')">Green</button>
+            <button onclick="color('blue')">Blue</button>
+            <button onclick="color('orange')">Orange</button>
+        </div>
+
+        <script>
+            function color(coll){
+                document.getElementById("screen").style.background=coll
+            }
+        </script>
+    </body>
+</html>
